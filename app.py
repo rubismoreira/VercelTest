@@ -41,6 +41,4 @@ def get_from_csv():
 if st.button('Reload Data'):
     df = fetch_data()
     styled_df = df.style.apply(highlight_rows, axis=1)
-    st.dataframe(styled_df)
-
-    
+    st.dataframe(styled_df)    
